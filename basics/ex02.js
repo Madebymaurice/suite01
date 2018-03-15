@@ -13,7 +13,9 @@
 */
 
 //  écrire votre code sous ce commentaire
-
+const retParam = (nb) => {
+  return nb;
+}
 /*
   Test 1
   Résultat attendu: "5"
