@@ -8,7 +8,12 @@
 */
 
 //  écrire votre code sous ce commentaire
-
+const isEven = (nb) => {
+  if (nb%2 == 0) {
+    return 1;
+  }
+  return 0;
+}
 /*
   Test 1
   Résultat attendu : 1
