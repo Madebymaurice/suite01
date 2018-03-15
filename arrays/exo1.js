@@ -12,6 +12,12 @@
 
 //  écrire votre code sous ce commentaire
 
+const getCharAt = (_str, _position) => {
+  let pos = _position;
+  let res = _str[pos];
+  return res;
+}
+
 /*
   Test 1
   Résultat attendu : "j"

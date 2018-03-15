@@ -8,6 +8,11 @@
 */
 
 //  écrire votre code sous ce commentaire
+const editArrayAt = (_arr, _pos, _val) => {
+  let startIndex = _pos;
+  let change = _arr.splice(startIndex, 1, _val)
+  return _arr;
+}
 
 /*
   Test 1
