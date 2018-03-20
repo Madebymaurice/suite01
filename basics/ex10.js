@@ -13,6 +13,63 @@
 
 //  écrire votre code sous ce commentaire
 
+// const shoppingList = (array) => {
+//     let current = null;
+//     let count = 0;
+//     let myNewArray = [].concat.apply([], array);
+//     myNewArray.sort();
+//     console.log(myNewArray);
+//     for (var i = 0; i < myNewArray.length; i++) {
+//         // for (var j = 0; j < array[i].length; j++) {
+
+//             let fruit = myNewArray[i];
+//             if (fruit != current){
+//                 if (count > 0) {
+//                     console.log(current + ':' + count)
+//                 }
+//                 current = myNewArray[i];
+//                 count = 1;
+//             } else {
+//                 count++;
+//             }
+//         // }
+//     }
+//     if (count > 0){
+//         console.log(current + ':' + count);
+//     }
+// }
+const shoppingList = (array) => {
+    let obj = {};
+    // let myNewArray = [].concat.apply([], array);
+    // myNewArray.sort();
+    // console.log(myNewArray);
+    for (var i = 0; i < array.length; i++) {
+        for (var j = 0; j < array[i].length; j++) {
+            let fruit = array[i][j];
+                if (fruit in obj) {
+                    fruit = 1;
+                }
+                else {
+                    obj[i] = fruit;
+                    fruit++
+                }
+       
+        }
+    }
+    console.log(obj);
+
+}
+    // if (count > 0){
+    //                  result.value = fruit;
+    //                 result.count = count;
+    //             }
+    // console.log(result); 
+
+    // if (result.count > 0){
+    //     console.log(result.value = fruit);
+    //     console.log(result.count++)
+    // }
+
 /*
   Test 1
   Résultat attendu : {

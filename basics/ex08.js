@@ -14,6 +14,26 @@
 */
 
 //  écrire votre code sous ce commentaire
+const isEven = (nb) => {
+  if (nb%2 == 0) {
+    return 1;
+  }
+  return 0;
+}
+
+const isAllEven = (array) => {
+
+  for (let i = array.length - 1; i >= 0; i--) {
+    let nb = array[i];
+    let test = isEven(nb);
+
+    if (test == 0) {
+      return 0;
+    } 
+  }
+  return 1;
+
+}
 
 /*
   Test 1
