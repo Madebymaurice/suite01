@@ -10,6 +10,10 @@
 */
 
 //  écrire votre code sous ce commentaire
+const searchOcc = (_array, _occ) => {
+  return _array.findIndex(k => k==_occ);
+
+}
 
 /*
   Test 1

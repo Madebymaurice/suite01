@@ -7,7 +7,10 @@
 */
 
 //  écrire votre code sous ce commentaire
-
+const editStringAt = (_str, _position, _char) => {
+  var res = _str.replace(_str[_position], _char);
+  return res;
+}
 /*
   Test 1
   Résultat attendu : "Bondour"
