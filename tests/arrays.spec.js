@@ -5,8 +5,8 @@ describe("Arrays", () => {
   const exo2 = require('../arrays/exo2');
   const exo3 = require('../arrays/exo3');
   const exo4 = require('../arrays/exo4');
-  // const exo5 = require('../arrays/exo5');
-  // const exo6 = require('../arrays/exo6');
+  const exo5 = require('../arrays/exo5');
+  const exo6 = require('../arrays/exo6');
   // const exo7 = require('../arrays/exo7');
 
   /* Test Exercice 1 */
@@ -58,7 +58,7 @@ describe("Arrays", () => {
   });
 
   /* Test Exercice 5 */
-  xdescribe('Arrays - Exo 5', () => {
+  describe('Arrays - Exo 5', () => {
     it('should return arrays concatenated - 1', () => {
       expect(exo5.concatArrays(["bonjour"], ["ça", "va?", 3, 4])).toEqual(["bonjour", "ça", "va?", 3, 4]);
     });
@@ -69,7 +69,7 @@ describe("Arrays", () => {
   });
 
   /* Test Exercice 4 */
-  xdescribe('Arrays - Exo 6', () => {
+  describe('Arrays - Exo 6', () => {
     it('should return sorted array - 1', () => {
       expect(exo6.sortNumbers([4, 3, 5, 2])).toEqual([2, 3, 4, 5]);
     });

@@ -11,7 +11,11 @@
 */
 
 //  écrire votre code sous ce commentaire
-
+const concatArrays = (arr1, arr2) => {
+  var array = arr1, arr2;
+  array.push.apply(arr1, arr2);
+  return array;
+}
 /*
   Test 1
   Résultat attendu : ["bonjour", "ça", "va?", 3, 4]

@@ -8,6 +8,21 @@
 */
 
 //  écrire votre code sous ce commentaire
+const sortNumbers = (arr) => {
+  var done = false;
+  while(!done){
+    done = true;
+    for (var i = 0; i < arr.length; i++) {
+      if (arr[i - 1] > arr[i]) {
+        done = false;
+        var tmp = arr[i - 1];
+        arr[i - 1] = arr[i];
+        arr[i] = tmp;
+      }
+    }
+  }
+  return arr;
+}
 
 /*
   Test 1
