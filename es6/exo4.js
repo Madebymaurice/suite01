@@ -11,6 +11,10 @@
 */
 
 //  écrire votre code sous ce commentaire
+const checkVehicles = (_arr, _str) => {
+  var result = _arr.includes(_str);  
+  return result;
+}
 
 /*
   Test 1

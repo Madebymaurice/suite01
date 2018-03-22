@@ -10,6 +10,16 @@
 */
 
 //  écrire votre code sous ce commentaire
+const countTotalTimeSpent = (_arr) => {
+
+	// console.log(result);
+	let group = _arr.map(n => n.time);
+	let result = group.reduce((acc, val) => {
+		return acc + val;
+	});
+    
+  return result;
+}
 
 /*
   Test 1
