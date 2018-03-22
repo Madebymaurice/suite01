@@ -10,6 +10,20 @@
 */
 
 //  écrire votre code sous ce commentaire
+const splitStr = (_str, _occ) => {
+  let tab = [''];
+  let j = 0;
+  
+  for (var i = 0; i < _str.length; i++) {
+    if (_str.charAt(i) == _occ){
+      j++;
+      tab.push('');
+    } else {
+      tab[j] += _str.charAt(i);
+    }
+  }
+  return tab;
+}
 
 /*
   Test 1
