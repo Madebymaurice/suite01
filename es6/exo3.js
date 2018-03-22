@@ -10,6 +10,14 @@
 */
 
 //  écrire votre code sous ce commentaire
+const findYellowFruit = (_arr) => {
+  var result = _arr.find(fruit => fruit.color === "jaune");
+
+  if (result == undefined){
+    return '';
+  }
+  return result.name
+}
 
 /*
   Test 1

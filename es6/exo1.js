@@ -10,7 +10,19 @@
 */
 
 //  écrire votre code sous ce commentaire
+const getAllLastnames = (_arr) => {
 
+  var result = _arr.map(n => {
+    if (n.name) {
+      return n.name;
+    } else {
+      return '';
+    }
+  });
+    
+  return result;
+
+}
 /*
   Test 1
   Résultat attendu : ["John", "Judith", "Julia"]

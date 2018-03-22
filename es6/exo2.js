@@ -10,6 +10,12 @@
 */
 
 //  écrire votre code sous ce commentaire
+const filterEvenNumbers = (_arr) => {
+   var result = _arr.filter(val => {
+    return val%2==0;
+   });
+   return result;
+}
 
 /*
   Test 1
