@@ -6,10 +6,10 @@ describe("Es6", () => {
   const exo3 = require('../es6/exo3');
   const exo4 = require('../es6/exo4');
   const exo5 = require('../es6/exo5');
-  // const exo6 = require('../es6/exo6');
-  // const exo7 = require('../es6/exo7');
-  // const exo8 = require('../es6/exo8');
-  // const exo9 = require('../es6/exo9');
+  const exo6 = require('../es6/exo6');
+  const exo7 = require('../es6/exo7');
+  const exo8 = require('../es6/exo8');
+  const exo9 = require('../es6/exo9');
 
   /* Test Exercice 1 */
   describe('Es6 - Exo 1', () => {
@@ -82,7 +82,7 @@ describe("Es6", () => {
   });
 
   /* Test Exercice 6 */
-  xdescribe('Es6 - Exo 6', () => {
+  describe('Es6 - Exo 6', () => {
     it('should return ["Thursday", "Friday"]', () => {
       const spyedFun = spyOn(String.prototype, "split").and.callThrough();
       expect(exo6.getTwoLastItems("Monday,Tuesday,Wednesday,Thursday,Friday", ",")).toEqual(["Thursday", "Friday"]);
@@ -95,7 +95,7 @@ describe("Es6", () => {
   });
 
   /* Test Exercice 7 */
-  xdescribe('Es6 - Exo 7', () => {
+  describe('Es6 - Exo 7', () => {
     it('should return "18/05/2018"', () => {
       const spyedFun = spyOn(Array.prototype, "join").and.callThrough();
       expect(exo7.joinDates(['18', '05', '2018'], "/")).toEqual("18/05/2018");
@@ -112,7 +112,7 @@ describe("Es6", () => {
   });
 
   /* Test Exercice 8 */
-  xdescribe('Es6 - Exo 8', () => {
+  describe('Es6 - Exo 8', () => {
     it('should return true', () => {
       const spyedFun = spyOn(Array.prototype, "every").and.callThrough();
       expect(exo8.verifyHumans([{name: 'John', size: '1m80'}, {name: 'Patrick', size: '1m75'}, {name: 'Marie', size: '1m68'}])).toBeTruthy();
@@ -125,7 +125,7 @@ describe("Es6", () => {
   });
 
   /* Test Exercice 8 */
-  xdescribe('Es6 - Exo 9', () => {
+  describe('Es6 - Exo 9', () => {
     it('should return "Wild Code School Bordeaux"', () => {
       const spyedFun = spyOn(Array.prototype, "sort").and.callThrough();
       expect(exo9.sortMyWords([{order: 2, word: 'Code'}, {order: 4, word: 'Bordeaux'}, {order: 1, word: 'Wild'}, {order: 3, word: 'School'}])).toEqual("Wild Code School Bordeaux");

@@ -10,6 +10,14 @@
 */
 
 //  écrire votre code sous ce commentaire
+const sortMyWords = (_arr) => {
+
+  let trie = _arr.sort(function(a,b){
+    return a.order - b.order;
+  });
+  let group = trie.map(n => n.word).join(" ");
+  return group;
+}
 
 /*
   Test 1

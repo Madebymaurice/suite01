@@ -10,7 +10,10 @@
 */
 
 //  écrire votre code sous ce commentaire
-
+const getTwoLastItems = (_str, _pattern) => {
+   let result = _str.split(_pattern).slice(-2);
+  return result;
+}
 /*
   Test 1
   Résultat attendu : ["Thursday", "Friday"]

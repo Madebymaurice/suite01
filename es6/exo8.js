@@ -9,6 +9,10 @@
 */
 
 //  écrire votre code sous ce commentaire
+const verifyHumans = (_arr) => {
+  let result = _arr.every(n => n.size > '1m60');
+  return result;
+}
 
 /*
   Test 1

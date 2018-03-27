@@ -10,6 +10,10 @@
 */
 
 //  écrire votre code sous ce commentaire
+const joinDates = (_arr, _pattern) => {
+  let result = _arr.join(_pattern);
+  return result;
+}
 
 /*
   Test 1
